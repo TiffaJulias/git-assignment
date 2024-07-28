@@ -9,6 +9,10 @@ app = application
 def home_page():
     return render_template("index.html")
 
+# tambahan dari maintenance developer Tiffa
+def new_function():
+    return "function tambahan"
+
 @app.route('/predict', methods=['GET', 'POST'])
 def predict_datapoint():
     if request.method == "GET":
